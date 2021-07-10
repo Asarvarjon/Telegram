@@ -1,0 +1,38 @@
+$mainColor: #181818;
+$secondColor: #212121; 
+
+*,*::after,*::before {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #0F0F0F;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+    background-color: $mainColor;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+a {
+    display: inline-block;
+}
+
+ul,ol {
+    list-style: none;
+}
+
+.container-fluid {
+    width: 100%; 
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;  
+}
+ 

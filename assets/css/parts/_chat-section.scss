@@ -1,0 +1,252 @@
+$mainColor: #181818;
+$secondColor: #212121;
+
+.chat-section {
+    position: relative;
+    width: 67%;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    overflow: hidden;
+}
+
+.bottom-link { 
+    position: absolute;
+    right: 13%;
+    bottom: 15%;
+    background-color: #333;
+    display: block;
+    color: #fff; 
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+ 
+
+.chat-section__header { 
+    width: 100%;
+    padding: 8px 20px 8px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $secondColor;
+    border-left: 1px solid black;
+}
+
+.chat-user-info{
+    width: 35%;
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+}
+
+.chat-user-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.chat-user-name {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.chat-username {
+    color: white;
+    cursor: pointer;
+    font-size: 19px;
+}
+
+.chat-user-time {
+    font-size: 16px;
+    color: #aaa;
+}
+
+.chat-settings {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.chat-search-btn {
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    border: none;  
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: 0.3s;
+}
+
+.search-button {
+    font-size:1.5rem; 
+     color: #AAAAAA;
+}
+ 
+.chat-search-btn:hover {
+    background-color: #333;
+}
+
+.chat-settings__btn {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    border: none;
+    width: 45px;
+    height: 45px;
+    background-color: transparent; 
+    margin-left: 10px;
+    padding: 10px; 
+    border-radius: 50%;
+    background-color: transparent;
+    transition: 0.3s;
+}
+
+.chat-settings__btn:hover {
+    background-color: #333;
+}
+
+.dot{
+    display: block;
+    width: 5px;
+    height: 5px;
+    margin: 2px 2px;
+    background-color: #aaa;
+    border-radius: 50%;
+}
+
+ 
+
+.messages { 
+    width: 70%;
+    display: flex;
+    flex-direction: column;   
+    align-items: center;
+}
+
+.chatting-date { 
+    width: 12%;
+    text-align: center;
+    color: white;
+    padding: 4px 0px;
+    background-color: #222;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.sent-message {
+    max-width: 50%;
+    background-color: #8774E1;
+    color: white;
+    padding: 6px 10px;
+    margin: 10px 0px 0px auto;
+    border-radius: 10px 15px 0px 10px;
+    font-size: 16px; 
+}
+
+.message-time {
+    display: inline-block;
+    font-size: 11px;
+    color: rgba(255, 255, 255, .6);
+    padding-top: 4px; 
+    margin-left: 4px;
+}
+
+.received-message {
+    max-width: 50%;
+    background-color: $secondColor;
+    color: white;
+    padding: 6px 10px;
+    margin: 10px auto 0px 0px;
+    border-radius: 10px 15px 10px 0px;
+    font-size: 16px; 
+}
+
+.chat-background { 
+    width: 100%;  
+    height: 80vh;
+    overflow-y: scroll;   
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;   
+}
+
+.chat-section-footer {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    margin: 10px auto; 
+}
+
+.message-send-form {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    background-color: $secondColor;
+    border-radius: 15px;
+    border-bottom-right-radius: 0px; 
+}
+
+.emoji-btn{
+    background-color: transparent;
+    outline: none;
+    font-size: 24px;
+    color: #aaa;
+    border: none;
+    cursor: pointer;
+}
+
+.message-send-input {
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    margin-left: 20px;
+    width: 60%;
+    color: white;
+}
+
+.attach-btn {
+    background-color: transparent;
+    outline: none;
+    font-size: 22px;
+    color: #aaa;
+    border: none;
+    margin-left: auto;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.voice-btn {
+    background-color: transparent;
+    outline: none;
+    font-size: 24px;
+    width: 55px;
+    height: 55px;
+    color: #aaa;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: $secondColor;
+    margin-left: 10px;
+    cursor: pointer;
+} 

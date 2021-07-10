@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram</title>
+    <link rel="shortcut icon" href="./assets/img/telegram.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/parts/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="whole">
+        <div class="container-fluid">
+            <div class="aside">
+                <div class="aside__header">
+                    <div class="aside__header__info">
+                        <span class="main-settings-btn"
+                            style="font-size: 1.3em; height: 30px; width: 30px; color: #AAAAAA;">
+                            <i class="fas fa-bars"></i>
+                        </span>
+
+                        <form class="search-form">
+                            <span class="search-btn" style="font-size: 1.3em; color: #AAAAAA;">
+                                <i class="fas fa-search"></i>
+                            </span>
+                            <input type="text" placeholder="Search" class="search-input">
+                        </form>
+                    </div>
+
+                    <div class="aside__header__folders">
+                        <button class="all active">All Chats</button>
+                        <button class="personal">Personal</button>
+                    </div>
+                </div>
+
+                <div class="aside__users">
+                    <div class="user-box actived-user-box">
+                        <div class="user-photo-box">
+                            <img src="./assets/img/office.jpg" alt="user photo" class="user-photo">
+                        </div>
+
+                        <div class="user-info">
+                            <div class="user-main-info">
+                                <p class="user-name">
+                                    Elnur
+                                </p>
+
+                                <time class="time">
+                                    15:49
+                                </time>
+                            </div>
+
+                            <div class="user-message-info">
+                                <p class="user-message-title">
+                                    Lorem ipsum dolor sit.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="write-btn">
+                        <i class="fas fa-pen"></i>
+                    </button>
+
+                    <button class="close-write-btn">
+                        x
+                    </button>
+
+                    <div class="write-modal">
+                        <ul class="write-modal-list">
+                            <li class="write-modal-item">
+                                <span class="write-icon">
+                                    <i class="fas fa-bullhorn"></i>
+                                </span>
+
+                                <p class="write-title">
+                                    New Channel
+                                </p>
+                            </li>
+
+                            <li class="write-modal-item">
+                                <span class="write-icon">
+                                    <i class="fas fa-user-friends"></i>
+                                </span>
+
+                                <p class="write-title">
+                                    New Group
+                                </p>
+                            </li>
+
+                            <li class="write-modal-item">
+                                <span class="write-icon">
+                                    <i class="fas fa-user"></i>
+                                </span>
+
+                                <p class="write-title">
+                                    New User
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="settings-modal">
+                        <ul class="settings-list">
+                            <li class="settings-item" id="profile">
+                                <span class="settings-icon" style="font-size: 25px; color: #aaa;">
+                                    <i class="fas fa-user-alt"></i>
+                                </span>
+
+                                <p class="settings-title">My profile</p>
+
+                            </li>
+
+                            <li class="settings-item">
+                                <span class="settings-icon" style="font-size: 25px; color: #aaa;">
+                                    <i class="fas fa-bookmark"></i>
+                                </span>
+
+                                <p class="settings-title">Saved messages</p>
+
+                            </li>
+
+                            <li class="settings-item">
+                                <span class="settings-icon" style="font-size: 25px; color: #aaa;">
+                                    <i class="far fa-id-badge"></i>
+                                </span>
+
+                                <p class="settings-title">Contacts</p>
+
+                            </li>
+
+                            <li class="settings-item">
+                                <span class="settings-icon" style="font-size: 25px; color: #aaa;">
+                                    <i class="fas fa-cog"></i>
+                                </span>
+
+                                <p class="settings-title">Settings</p>
+
+                            </li>
+
+                            <li class="settings-item">
+                                <span class="settings-icon" style="font-size: 25px; color: #aaa;">
+                                    <i class="fas fa-moon"></i>
+                                </span>
+
+                                <p class="settings-title">Dark mode</p>
+
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+
+                            </li>
+
+                            <li class="settings-item">
+                                <span class="settings-icon" style="font-size: 25px; color: #aaa;">
+                                    <i class="fas fa-cog"></i>
+                                </span>
+
+                                <p class="settings-title">Animations</p>
+
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+
+                            </li>
+
+                            <li class="settings-item">
+                                <span class="settings-icon" style="font-size: 25px; color: #aaa;">
+                                    <i class="far fa-question-circle"></i>
+                                </span>
+
+                                <p class="settings-title">Telegram features</p>
+
+                            </li>
+
+                            <li class="settings-item">
+                                <span class="settings-icon" style="font-size: 25px; color: #aaa;">
+                                    <i class="fas fa-bug"></i>
+                                </span>
+
+                                <p class="settings-title">Report bug</p>
+
+                            </li>
+
+
+                            <li class="settings-item">
+                                <span class="settings-icon" style="font-size: 25px; color: #aaa;">
+                                    Z
+                                </span>
+
+                                <p class="settings-title">Switch to Z version</p>
+
+                            </li>
+
+                            <li class="settings-item">
+                                <span class="settings-icon" style="font-size: 25px; color: #aaa;">
+                                    W
+                                </span>
+
+                                <p class="settings-title">Switch to Old Version</p>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="chat-section">
+                <div class="chat-section__header">
+                    <div class="chat-user-info">
+                        <img src="./assets/img/office.jpg" alt="avatar" class="chat-user-avatar">
+
+                        <p class="chat-user-name">
+                            <span class="chat-username">
+                                Elnur
+                            </span>
+                            <span class="chat-user-time">
+                                last seen recently
+                            </span>
+                        </p>
+                    </div>
+
+                    <div class="chat-settings">
+                        <button class="chat-search-btn">
+                            <span class="search-button" style=" font-size:1.5rem;  color: #AAAAAA;">
+                                <i class="fas fa-search"></i>
+                            </span>
+                        </button>
+
+                        <button class="chat-settings__btn">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="chat-background">
+                    <ul class="messages">
+
+
+                      
+                        <a href="#bottom" class="bottom-link">
+                            <i class="fas fa-arrow-down"></i>
+                        </a>
+
+                        <div id="bottom"></div>
+                    </ul>
+                </div>
+
+                <div class="chat-section-footer">
+                    <form class="message-send-form">
+                        <button class="emoji-btn">
+                            <span class="emoji-span">
+                                <i class="far fa-smile"></i>
+                            </span>
+                        </button>
+
+                        <input type="text" class="message-send-input" placeholder="Message">
+
+
+                        <button class="attach-btn">
+                            <i class="fas fa-paperclip"></i>
+                        </button>
+                    </form>
+
+                    <button class="voice-btn">
+                        <i class="fas fa-microphone"></i>
+                    </button>
+                </div>
+            </div> -->
+
+
+
+
+            <div class="user-profile-section">
+                <div class="profile-scroll">
+                    <div class="user-profile__header">
+                        <button class="profile-close-btn">
+                            x
+                        </button>
+
+                        <h3 class="profile-name">
+                            Profile
+                        </h3>
+
+                        <button class="profile-write-btn">
+                            <i class="fas fa-pen"></i>
+                        </button>
+                    </div>
+
+                    <div class="user-profile__photo-box">
+                        <img src="./assets/img/office.jpg" alt="" class="user-avatar-photo">
+
+                        <div class="avatar-sub-info">
+                            <p class="text"> 
+                                Elnur 
+                            </p>
+                                <span class="avatar-online-time">
+                                    last seen recently
+                                </span>
+                        </div>
+                      
+                    </div>
+
+                    <ul class="user-infos">
+                        <li class="user-information">
+                            <span class="infos-icon">
+                                <i class="fas fa-phone"></i>
+                            </span>
+
+                            <p class="user-number">
+                                +998 99 000 00 00
+
+                                <span class="info-name">
+                                    Phone
+                                </span>
+                            </p>
+                        </li>
+
+                        <li class="user-information">
+                            <span class="infos-icon">
+                                <i class="fas fa-at"></i>
+                            </span>
+
+                            <p class="user-number">
+                                elnur_ruzmanov
+
+                                <span class="info-name">
+                                    username
+                                </span>
+                            </p>
+                        </li>
+
+                        <li class="user-information">
+                            <span class="infos-icon">
+                                <i class="far fa-question-circle"></i>
+                            </span>
+
+                            <p class="user-number">
+
+
+                                <span class="info-name">
+                                    Bio
+                                </span>
+                            </p>
+                        </li>
+
+                        <li class="user-information">
+                            <span class="infos-icon">
+                                <i class="far fa-bell"></i>
+                            </span>
+
+                            <p class="user-number">
+                                Notifications
+                            </p>
+
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                        </li>
+                    </ul>
+
+                    <div class="user-medias">
+                        <ul class="media-types">
+                            <li class="media media-active">
+                                Media
+                            </li>
+
+                            <li class="media">
+                                Files
+                            </li>
+
+                            <li class="media">
+                                Links
+                            </li>
+
+                            <li class="media">
+                                Voice
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <ul class="media-examples">
+                        <li class="media-example-item">
+                            <div class="photo-box">
+                                <img src="https://picsum.photos/100/100" alt="" class="media-img">
+                                <img src="https://picsum.photos/100/100?2" alt="" class="media-img">
+                            </div>
+
+                            <div class="media-time">
+                                June
+                            </div>
+                        </li>
+
+                        <li class="media-example-item">
+                            <div class="photo-box">
+                                <img src="https://picsum.photos/100/100?11" alt="" class="media-img">
+                                <img src="https://picsum.photos/100/100?3" alt="" class="media-img">
+                                <img src="https://picsum.photos/100/100?12" alt="" class="media-img">
+                            </div>
+
+                            <div class="media-time">
+                                May
+                            </div>
+                        </li>
+
+                        <li class="media-example-item">
+                            <div class="photo-box">
+                                <img src="https://picsum.photos/100/100?9" alt="" class="media-img">
+                                <img src="https://picsum.photos/100/100?6" alt="" class="media-img">
+                            </div>
+
+                            <div class="media-time">
+                                April
+                            </div>
+                        </li>
+
+                        <li class="media-example-item">
+                            <div class="photo-box">
+                                <img src="https://picsum.photos/100/100?7" alt="" class="media-img">
+                                <img src="https://picsum.photos/100/100?10" alt="" class="media-img">
+                                <img src="https://picsum.photos/100/100?14" alt="" class="media-img">
+                            </div>
+
+                            <div class="media-time">
+                                March
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="search-section">
+                <div class="search-section-header">
+                    <button class="prev-button">
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+
+                    <form class="search-section-form">
+                        <i class="fas fa-search"></i>
+
+                        <input type="text" placeholder="Search" class="search-section__input">
+                    </form>
+
+
+                    <button class="calendar">
+                        <i class="fas fa-calendar"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="edit-profile-box">
+        <div class="profile-edit-top">
+            <button class="arrow-left">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+
+            <p class="edit-title">
+                Info
+            </p>
+
+
+            <button class="edit-close-btn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="edit-header">
+            <div class="profile-img">
+                <img src="./assets/img/telegram.svg" alt="" class="img">
+            </div>
+
+            <button class="img-change">
+                Change profile photo
+            </button>
+        </div>
+
+        <ul class="profile-infos">
+            <li class="profile-item">
+                <div class="profile-icon">
+                    <i class="fas fa-user-alt"></i>
+                </div>
+
+                <p id="name" class="name">
+                    Amriyev Sarvarjon
+
+                    <span class="name-title">
+                        Name
+                    </span>
+                </p>
+
+                <button id="changeName" class="change-button">
+                    <i class="fas fa-pen"></i>
+                </button>
+
+                <form class="name-set">
+                    <input type="text" placeholder="Enter name and press Enter" class="name-input">
+                </form>
+            </li>
+
+            <li class="profile-item">
+                <div class="profile-icon">
+                    <i class="fas fa-phone"></i>
+                </div>
+
+                <p class="name">
+                    +998 99 933 53 56
+
+                    <span class="name-title">
+                        Phone number
+                    </span>
+                </p>
+
+                <button class="change-button">
+                    <i class="fas fa-pen"></i>
+                </button>
+            </li>
+
+            <li class="profile-item">
+                <div class="profile-icon">
+                    <i class="fas fa-at"></i>
+                </div>
+
+                <p class="name">
+                    @s_amriev
+                    <span class="name-title">
+                        Username
+                    </span>
+                </p>
+
+                <button class="change-button">
+                    <i class="fas fa-pen"></i>
+                </button>
+            </li>
+        </ul>
+    </div>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/parts/users.js"></script>
+    <!-- <script src="./js/parts/chatSection.js"></script> -->
+</body>
+
+</html>
