@@ -73,31 +73,33 @@
  })
 
 
+let datalist = [];
+
 
 
  // Chat background  and chat section
- const sendMessageForm = document.querySelector(".message-send-form")
- const sendMessageInput = document.querySelector(".message-send-input")
- const messagesParent = document.querySelector(".messages")
-/*
- const data = JSON.parse(localStorage.getItem("data")) || []
+//  const sendMessageForm = document.querySelector(".message-send-form")
+//  const sendMessageInput = document.querySelector(".message-send-input")
+//  const messagesParent = document.querySelector(".messages")
 
- data.forEach(element => {
-   const newPElement = document.createElement("p")
-   newPElement.classList.add("sent-message")
+//  const data = JSON.parse(localStorage.getItem("data")) || []
 
-   const newTimeElement = document.createElement("time")
-   newTimeElement.classList.add("message-time")
+//  data.forEach(element => {
+//    const newPElement = document.createElement("p")
+//    newPElement.classList.add("sent-message")
 
-   newTimeElement.textContent = element.time
-   newPElement.textContent = element.message
+//    const newTimeElement = document.createElement("time")
+//    newTimeElement.classList.add("message-time")
 
-   messagesParent.appendChild(newPElement)
-   newPElement.appendChild(newTimeElement)
+//    newTimeElement.textContent = element.time
+//    newPElement.textContent = element.message
+
+//    messagesParent.appendChild(newPElement)
+//    newPElement.appendChild(newTimeElement)
 
 
- });
-*/
+//  });
+ 
 /*
  sendMessageForm.addEventListener('submit', event => {
    event.preventDefault()
@@ -183,3 +185,6 @@
    nameElement.textContent = nameInputElement.value
    nameChangeForm.style.display = "none"
  })
+
+
+ 
