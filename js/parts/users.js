@@ -53,7 +53,7 @@ let localStorageData = localStorage.getItem('data')
              messageSendedTime: '12:46'
          }, {
              sender: 'Elnur',
-             message: 'Ready to pour… the Font Awesome 6 Beta!             ',
+             message: 'Font Awesome 6 Beta!             ',
              messageSendedTime: "18:00"
          }]
      }, {
@@ -69,7 +69,7 @@ let localStorageData = localStorage.getItem('data')
              messageSendedTime: '13:26'
          }, {
              sender: 'Elnur',
-             message: 'Va Alaykum assalom',
+             message: 'Va Alaykum assalom, qalaysiz',
              messageSendedTime: "18:00"
          }]
      }, {
@@ -85,7 +85,7 @@ let localStorageData = localStorage.getItem('data')
              messageSendedTime: '22:06'
          }, {
              sender: 'Elnur',
-             message: 'Va Alaykum assalom',
+             message: 'Nima bu?',
              messageSendedTime: "18:00"
          }]
      }, {
@@ -101,7 +101,7 @@ let localStorageData = localStorage.getItem('data')
              messageSendedTime: '12:56'
          }, {
              sender: 'Elnur',
-             message: 'Va Alaykum assalom',
+             message: 'Qayerdasiz? Toshkentdamisiz',
              messageSendedTime: "18:00"
          }] }, {
             chatId: 7,
@@ -116,7 +116,7 @@ let localStorageData = localStorage.getItem('data')
                 messageSendedTime: '04:56'
             }, {
                 sender: 'Elnur',
-                message: 'Va Alaykum assalom',
+                message: 'Bugun markazga kela olasizmi?',
                 messageSendedTime: "18:00"
             }]
         }, {
@@ -147,7 +147,7 @@ let localStorageData = localStorage.getItem('data')
                 messageSendedTime: '17:56'
             }, {
                 sender: 'Elnur',
-                message: 'Tinchmi',
+                message: 'Kim bu, tanimadim',
                 messageSendedTime: "18:00"
             }]
         }
@@ -162,18 +162,22 @@ let localStorageData = localStorage.getItem('data')
  userChatRender() 
 
 
-function userRender(chatName, profileImg, messageSendedTime) {
+function userRender(chatName, profileImg, messageSendedTime, messageTitle) {
     const newUserBox = document.createElement("div")
     const userPhotoBox = document.createElement("div")
     const userMainInfo = document.createElement("div")
     const userInfo = document.createElement("div")
+    const userMessageInfo = document.createElement("div")
     const newUsername = document.createElement("p")
     const newTime = document.createElement("time") 
     const newImg = document.createElement("img")
+    const userMessageTitle = document.createElement("p")
 
     newUserBox.classList.add("user-box")
     userPhotoBox.classList.add("user-photo-box")
     userMainInfo.classList.add("user-main-info")
+    userMessageInfo.classList.add("user-message-info")
+    userMessageTitle.classList.add("user-message-title")
     userInfo.classList.add("user-info")
     newUsername.classList.add("user-name")
     newTime.classList.add("time") 
@@ -181,6 +185,7 @@ function userRender(chatName, profileImg, messageSendedTime) {
 
     newUsername.textContent = chatName
     newTime.textContent = messageSendedTime
+    userMessageTitle.textContent = messageTitle
     newImg.src = profileImg
 
 
@@ -188,8 +193,10 @@ function userRender(chatName, profileImg, messageSendedTime) {
     userPhotoBox.appendChild(newImg)
     userMainInfo.appendChild(newUsername)
     userMainInfo.appendChild(newTime)
+    userMessageInfo.appendChild(userMessageTitle)
 
     userInfo.appendChild(userMainInfo)
+    userInfo.appendChild(userMessageInfo)
 
     newUserBox.appendChild(userPhotoBox)
     newUserBox.appendChild(userInfo) 
@@ -201,7 +208,7 @@ function userRender(chatName, profileImg, messageSendedTime) {
 
 function userChatRender() {
     for(let item of data.chats){ 
-        asideUsers.appendChild(userRender(item.chatName, item.profileImg, item.chatMessages[0].messageSendedTime))
+        asideUsers.appendChild(userRender(item.chatName, item.profileImg, item.chatMessages[0].messageSendedTime, item.chatMessages[1].message))
     }
 
 }
